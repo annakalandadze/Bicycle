@@ -20,31 +20,36 @@ the database: bicycle points to gear by gear.id.
 ### 1. Create Bicycle
 We can create bicycle with either expensive or cheap gear. For this we need an RequestObject - in our case it will contain both gear and bicycle (JSON).
 If we test it in postman, we parse data \
-{\
-    "frontWheelSize": 30,\
-    "rearWheelSize": 31,\
-    "gear": {\
-        "chainTeeth": 4,\
-        "gearLevel": 32,\
-        "sprocketTeeth": 10,\
-        "gearRatio": 0.0,\
-        "id": 1\
-    }\
-} in such format. The result is 200OK if we parsed ecerything correctly.
+```json
+{
+    "frontWheelSize": 30,
+    "rearWheelSize": 31,
+    "gear": {
+        "chainTeeth": 4,
+        "gearLevel": 32,
+        "sprocketTeeth": 10,
+        "gearRatio": 0.0,
+        "id": 1
+    }
+} 
+```
+in such format. The result is 200OK if we parsed ecerything correctly.
 
 ### 2. Get Bicycle
 Bike is searched by id and if exists - returns. In postman the result would be\
-{\
-    "frontWheelSize": 30, \
-    "rearWheelSize": 31,\
-    "gear": {\
-        "chainTeeth": 4,\
-        "gearLevel": 32,\
-        "sprocketTeeth": 10,\
-        "gearRatio": 0.0,\
-        "id": 1\
-    }\
-}\
+```json
+{
+    "frontWheelSize": 30, 
+    "rearWheelSize": 31,
+    "gear": {
+        "chainTeeth": 4,
+        "gearLevel": 32,
+        "sprocketTeeth": 10,
+        "gearRatio": 0.0,
+        "id": 1
+    }
+}
+```
 
 ### 3. Increment gear level
 Increments gear level by one if gear exists.
