@@ -56,3 +56,6 @@ Increments gear level by one if gear exists.
 
 ### 4. Decrement gear level
 Decrements gear level by one if gear exists.
+
+## Details
+To access a database follow http://localhost:8080/h2-console . The username is "sa", password - pass. For all other questions - contact me.
