@@ -7,7 +7,7 @@ The assignment was done in Java using Spring. The assignment includes only backe
 ## Getting started
 
 ### Classes
-I deicded to divide Bicycle and Gear into separate classes. This decision was made due to complexity of gear: it has many attributes and class which extend it. 
+I decided to divide Bicycle and Gear into separate classes. This decision was made due to complexity of gear: it has many attributes and classes which extend it. 
 Expensive and cheap gears extend Gear class. Bicycle and Gear are connected: Bicycle has its own gear.
 
 ### Database
@@ -33,7 +33,7 @@ If we test it in postman, we parse data \
     }
 } 
 ```
-in such format. The result is 200OK if we parsed ecerything correctly.
+in such format. The result is 200OK if we parsed everything correctly.
 
 ### 2. Get Bicycle
 Bike is searched by id and if exists - returns. In postman the result would be\
