@@ -21,5 +21,4 @@ public interface GearRepository extends JpaRepository<Gear, Long> {
     @Query("UPDATE Gear g SET g.gearLevel = g.gearLevel-1 WHERE g.id = ?1")
     void decrementLevel(Long id);
 
-    //Optional<Gear> findByIdAndBicycleId(Long id, Long bicycle);
 }

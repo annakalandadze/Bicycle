@@ -10,5 +10,4 @@ import java.util.Optional;
 @Repository
 public interface BikeRepository extends JpaRepository<Bicycle, Long> {
     Optional<Bicycle> findById(Long id);
-    //Long findGearIdByBicycleId(Long id);
 }

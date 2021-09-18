@@ -59,7 +59,7 @@ public class BicycleController {
         JsonNode jsonNode = new ObjectMapper().readTree(object);
         Bicycle bicycle = new ObjectMapper().convertValue(jsonNode.get("Bicycle"), Bicycle.class);
         Gear gear = new ObjectMapper().convertValue(jsonNode.get("Gear"), Gear.class);
-        //gear = new CheapGear(gear.getChainTeeth());
+        gear = new CheapGear(gear.getChainTeeth());
         gear = gearRepository.save(gear);
         bicycle.setGear(gear);
         bikeRepository.save(bicycle);
